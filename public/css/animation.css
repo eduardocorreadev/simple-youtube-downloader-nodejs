@@ -1,0 +1,10 @@
+
+/* Loading Button */
+@keyframes loading-button {
+    0%   {
+        background-position: right bottom;
+    }
+    100% {
+        background-position: left bottom;
+    }
+}

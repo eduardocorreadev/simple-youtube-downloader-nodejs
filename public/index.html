@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Youtube Downloader</title>
+
+    <!-- Link to style documents -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper" id="wrapper">
+        <audio src="midia/audio/sound-sucess.mp3"></audio>
+
+        <!-- Downloader -->
+        <div class="downloader-yt" id="downloader-yt">
+
+            <!-- Container Downloader -->
+            <div class="container">
+
+                <!-- Text -->
+                <div class="text">
+                    <h1>Youtube Downloader</h1>
+                    <p>Faça download de vídeos do Youtube de forma rápida e totalmente gratuito!</p>
+                </div>
+
+                <!-- Form -->
+                <form id="form-downloader">
+                    <input type="url" name="link" placeholder="Link do vídeo que deseja fazer Download">
+
+                    <select name="quality">
+                        <option  value="Alta">Download em: Alta</option>
+                        <option value="Baixa">Download em: Baixa</option>
+                    </select>
+
+                    <button name="submit_downloader">Verificar Conteúdo</button>
+                    <p class="on-error-submit"></p>
+                </form>
+
+            </div>
+            <!-- End Container Downloader -->
+
+        </div>
+        <!-- End Downloader -->
+
+        <!-- View Content -->
+        <div class="view-content" id="view-content">
+
+            <!-- Error -->
+            <!-- <div class="on-error">
+                <img src="midia/icons/close.svg">
+                <h1>Ocorreu um erro!</h1>
+                <p>O motivo do erro vai aparecer aqui de acordo com o erro fornecido pelo o servidor!</p>
+                <button id="close-error-download">Fechar</button>
+            </div> -->
+            <!-- End Error -->
+
+        </div>
+        <!-- End View Content -->
+
+    </div>
+    <!-- End Wrapper -->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

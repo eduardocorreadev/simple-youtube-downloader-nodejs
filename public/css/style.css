@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #282a36;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+button, input[type=submit] {
+    cursor: pointer;
+}
+
+.downloader-yt {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.downloader-yt .container .text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.downloader-yt .container .text p {
+    color: #c9c9c9;
+    width: 20%;
+    margin: 10px auto 0 auto;
+}
+
+.downloader-yt form {
+    display: grid;
+    justify-content: center;
+}
+
+.downloader-yt form input,
+.downloader-yt form select {
+    width: 400px;
+    height: 45px;
+    text-align: center;
+    padding: 10px;
+    color: #c9c9c9;
+    background: #282a36;
+    border: 1px solid #44475a;
+    margin-bottom: 10px;
+}
+
+.downloader-yt form button {
+    width: 400px;
+    height: 45px;
+    background: linear-gradient(to right, #f84141 50%, #EB5757 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    border: none;
+}
+
+.downloader-yt form .on-loading {
+    animation: loading-button 5s;
+}
+
+.downloader-yt form p {
+    color: #EB5757;
+    margin: 10px 0;
+    width: 70%;
+}
+
+.view-content {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+    display: none;
+}
+
+.view-content .show-video {
+    display: grid;
+    justify-content: center;
+}
+
+.view-content .show-video iframe {
+    width: 400px;
+    margin-top: 30px;
+}
+
+.view-content .show-video button {
+    width: 400px;
+    height: 45px;
+}
+
+.view-content .show-video button.on-download {
+    width: 400px;
+    height: 45px;
+    background: linear-gradient(to right, #f84141 50%, #EB5757 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    border: none;
+    margin: 15px 0;
+}
+
+.view-content .show-video button.on-loading {
+    animation: loading-button 5s infinite alternate-reverse;
+}
+
+.view-content .show-video button.cancel-download {
+    background: transparent;
+    border: 1px solid #EB5757;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.view-content .show-video button.cancel-download:hover {
+    background: #EB5757;
+}
+
+.view-content .on-error img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.view-content .on-error p {
+    color: #c9c9c9;
+    width: 20%;
+    margin: 10px auto 0 auto;
+}
+
+.view-content .on-error button {
+    width: 400px;
+    height: 45px;
+    background: #EB5757;
+    color: #fff;
+    border: none;
+    margin-top: 30px;
+}

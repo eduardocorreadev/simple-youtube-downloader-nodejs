@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ucarlos1001/youtube-downloader-nodejs.git"
+    "url": "git+https://github.com/ucarlos1001/simple-youtube-downloader-nodejs"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ucarlos1001/youtube-downloader-nodejs/issues"
+    "url": "https://github.com/ucarlos1001/simple-youtube-downloader-nodejs/issues"
   },
-  "homepage": "https://github.com/ucarlos1001/youtube-downloader-nodejs#readme",
+  "homepage": "https://github.com/ucarlos1001/simple-youtube-downloader-nodejs#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",

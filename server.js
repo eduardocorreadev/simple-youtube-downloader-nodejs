@@ -4,7 +4,9 @@ const cors = require('cors')
 const ytdl = require('ytdl-core')
 const app = express()
 
-app.use(cors())
+const log = require('./logger')
+
+// app.use(cors())
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
@@ -12,9 +14,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/download', (req, res) => {
-    var idVideo = req.query.ID;
-    const urlVideo = `https://www.youtube.com/watch?v=${idVideo}`
-    res.header('Content-Disposition', 'attachment; filename="video.mp4"')
+    var {ID, QUALITY} = req.query;
+    const urlVideo = `https://www.youtube.com/watch?v=${ID}`
+    
+    res.header('Content-Disposition', 'attachment; filename="untitled.mp4"')
+
+    log(`${JSON.stringify(urlVideo)} \n`)
+    console.log(QUALITY)
 
     ytdl(urlVideo, {
         format: 'mp4'

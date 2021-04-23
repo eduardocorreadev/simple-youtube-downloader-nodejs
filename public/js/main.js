@@ -1,10 +1,10 @@
-const downloaderContainer = document.getElementById('downloader-yt') // Container Primario
-const viewContent = document.getElementById('view-content') // Container Secundario
-const formDownloader = document.getElementById('form-downloader') // Formulário presente no container primario
-const qualityDownloader = formDownloader.quality // Chamando o quality que está dentro do formulário que foi chamado na linha de cima
-const buttonSubmitForm = formDownloader.submit_downloader  // Chamando o botão que está dentro do formulário que foi chamado duas linhas a cima
+const downloaderContainer = document.getElementById('downloader-yt') // Primary Container
+const viewContent = document.getElementById('view-content') // Secondary Container
+const formDownloader = document.getElementById('form-downloader') // Form present in the primary container
+const qualityDownloader = formDownloader.quality // Calling the quality that is inside the form that was called in the top line
+const buttonSubmitForm = formDownloader.submit_downloader  // Calling the button inside the form that was called two lines above
 
-// Ouvindo o clique do botão downloader
+// Hearing the click of the downloader button
 buttonSubmitForm.addEventListener('click', event => {
 
     event.preventDefault() // Cancelando submit
@@ -65,7 +65,7 @@ buttonSubmitForm.addEventListener('click', event => {
                 const buttonDownload = document.getElementById('button-download')
 
                 buttonDownload.addEventListener('click', () => {
-                    location.href = `http://localhost:5000/download?ID=${idVideo}`
+                    location.href = `http://localhost:5000/download?ID=${idVideo}&QUALITY=${qualityDownloader.value}`
                 })
             }
         })
